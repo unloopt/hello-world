@@ -1,0 +1,42 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "fermyon-spin@latest": {
+      "last_modified": "2023-06-01T21:06:48Z",
+      "resolved": "github:NixOS/nixpkgs/e002d1926c23b29be7b59217e5f9740565b642ca#fermyon-spin",
+      "source": "devbox-search",
+      "version": "1.2.1"
+    },
+    "nats-top@latest": {
+      "last_modified": "2023-07-03T17:00:56Z",
+      "resolved": "github:NixOS/nixpkgs/453da3c28f7a95374b73d1f3fd665dd40e6049e9#nats-top",
+      "source": "devbox-search",
+      "version": "0.6.1"
+    },
+    "natscli@latest": {
+      "last_modified": "2023-06-01T21:06:48Z",
+      "resolved": "github:NixOS/nixpkgs/e002d1926c23b29be7b59217e5f9740565b642ca#natscli",
+      "source": "devbox-search",
+      "version": "0.0.35"
+    },
+    "nodejs@latest": {
+      "last_modified": "2023-08-10T15:58:45Z",
+      "resolved": "github:NixOS/nixpkgs/4d2389b927696ef8da4ef76b03f2d306faf87929#nodejs_20",
+      "source": "devbox-search",
+      "version": "20.5.1"
+    },
+    "nsc@latest": {
+      "last_modified": "2023-06-01T21:06:48Z",
+      "resolved": "github:NixOS/nixpkgs/e002d1926c23b29be7b59217e5f9740565b642ca#nsc",
+      "source": "devbox-search",
+      "version": "2.8.0"
+    },
+    "rustup@latest": {
+      "last_modified": "2023-06-26T15:25:16Z",
+      "plugin_version": "0.0.1",
+      "resolved": "github:NixOS/nixpkgs/9e4e0807d2142d17f463b26a8b796b3fe20a3011#rustup",
+      "source": "devbox-search",
+      "version": "1.26.0"
+    }
+  }
+}

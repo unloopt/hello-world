@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "vadimcn.vscode-lldb",
+    "rust-lang.rust-analyzer",
+    "tamasfe.even-better-toml",
+    "serayuzgur.crates",
+    "mkhl.direnv",
+    "dbaeumer.vscode-eslint",
+    "jetpack-io.devbox",
+    "firsttris.vscode-jest-runner",
+    "nrwl.angular-console",
+    "github.vscode-github-actions"
+  ],
+  "unwantedRecommendations": []
+}

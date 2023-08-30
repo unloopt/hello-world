@@ -1,0 +1,30 @@
+{
+  "packages": [
+    "rustup@latest",
+    "nodejs@latest",
+    "fermyon-spin@latest",
+    "natscli@latest",
+    "nsc@latest",
+    "nats-top@latest",
+    "path:flakes/ory-cli"
+  ],
+  "env": {
+    "PROJECT_DIR": "$PWD"
+  },
+  "shell": {
+    "init_hook": [
+      "source config/set-env.sh",
+      "rustup default stable",
+      "cargo fetch",
+      "npm install"
+    ],
+    "scripts": {
+      "build": "cargo build",
+      "build-docs": "cargo doc",
+      "run": "cargo run",
+      "test": [
+        "cargo test -- --show-output"
+      ]
+    }
+  }
+}
