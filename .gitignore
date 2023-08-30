@@ -16,3 +16,20 @@ Cargo.lock
 *.pdb
 
 node_modules/
+
+# Expo
+.expo/
+.yarn/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+cache/
+
+
+apps/hello-world-gui-e2e/artifacts
