@@ -15,8 +15,11 @@
     "init_hook": [
       "source config/set-env.sh",
       "rustup default stable",
+      "rustup target add wasm32-wasi",
       "cargo fetch",
-      "npm install"
+      "npm install",
+      "spin plugins update",
+      "spin templates install --git https://github.com/fermyon/spin --update"
     ],
     "scripts": {
       "build": "cargo build",

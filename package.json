@@ -25,6 +25,7 @@
     "@nx/jest": "16.7.4",
     "@nx/js": "16.7.4",
     "@nx/linter": "16.7.4",
+    "@nxrs/cargo": "^0.3.3",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/jest-native": "5.4.2",
     "@testing-library/react-native": "12.1.2",

@@ -1,0 +1,33 @@
+{
+    "name": "hello-world-service",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "projectType": "library",
+    "sourceRoot": "apps/hello-world-service/src",
+    "targets": {
+        "build": {
+            "executor": "@nxrs/cargo:build",
+            "options": {
+                "release": false,
+                "target": "wasm32-wasi"
+            },
+            "configurations": {
+                "production": {
+                    "release": true
+                }
+            }
+        },
+        "test": {
+            "executor": "@nxrs/cargo:test",
+            "options": {}
+        },
+        "lint": {
+            "executor": "@nxrs/cargo:clippy",
+            "options": {
+                "fix": false,
+                "failOnWarnings": true,
+                "noDeps": true
+            }
+        }
+    },
+    "tags": []
+}
