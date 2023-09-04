@@ -1,13 +1,13 @@
 spin_manifest_version = "1"
 authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
 description = "Backend service for the Hello world app"
-name = "hello-world-service"
+name = "hello-world-svc"
 trigger = { type = "http", base = "/" }
 version = "0.1.0"
 
 [[component]]
-id = "hello_world_service"
-source = "../../target/wasm32-wasi/release/hello_world_service.wasm"
+id = "hello_world_svc"
+source = "../../target/wasm32-wasi/release/hello_world_svc.wasm"
 allowed_http_hosts = []
 [component.trigger]
 route = "/..."

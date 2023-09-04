@@ -1,5 +1,5 @@
 [package]
-name = "hello-world-service"
+name = "hello-world-svc"
 authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
 description = "Backend service for the Hello world app"
 version = "0.1.0"
