@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "A proof of concept repository for exploring modern design patterns, cloud-native architectures and technologies, and development workflows, gradually establishing the unloopt's development environment and set of best practices with the aim of providing a smooth developer experience and sought-after clarity.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/unloopt/hello-world.git"

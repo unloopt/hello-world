@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/accessible-emoji */
-import React, { useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -9,12 +9,31 @@ import {
   StatusBar,
   TouchableOpacity,
   Linking,
+  ActivityIndicator,
 } from 'react-native';
 import Svg, { Path } from 'react-native-svg';
 
 export const App = () => {
+  const [isLoading, setLoading] = useState(true);
+  const [greeting, setGreeting] = useState<string>();
   const [whatsNextYCoord, setWhatsNextYCoord] = useState<number>(0);
   const scrollViewRef = useRef<null | ScrollView>(null);
+
+  const getGreeting = async () => {
+    try {
+      const response = await fetch('hello-world-svc-1vobegdh.fermyon.app');
+      const text = await response.text();
+      setGreeting(text);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    getGreeting();
+  }, []);
 
   return (
     <>
@@ -28,10 +47,13 @@ export const App = () => {
           style={styles.scrollView}
         >
           <View style={styles.section}>
-            <Text style={styles.textLg}>Hello there,</Text>
-            <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
-              Welcome HelloWorldGui 👋
-            </Text>
+            {isLoading ? (
+              <ActivityIndicator />
+            ) : (
+              <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
+                greeting
+              </Text>
+            )}
           </View>
           <View style={styles.section}>
             <View style={styles.hero}>

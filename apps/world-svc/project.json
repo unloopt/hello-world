@@ -1,8 +1,8 @@
 {
-    "name": "hello-world-svc",
+    "name": "world-svc",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "projectType": "library",
-    "sourceRoot": "apps/hello-world-svc/src",
+    "sourceRoot": "apps/world-svc/src",
     "targets": {
         "build": {
             "executor": "@nxrs/cargo:build",

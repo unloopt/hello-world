@@ -1,7 +1,7 @@
 [package]
-name = "hello-world-svc"
+name = "world-svc"
 authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
-description = "Backend service for the Hello world app"
+description = "World backend service"
 version = "0.1.0"
 edition = "2021"
 

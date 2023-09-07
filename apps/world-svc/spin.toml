@@ -1,0 +1,16 @@
+spin_manifest_version = "1"
+authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
+description = "World backend service"
+name = "world-svc"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "world_svc"
+source = "../../target/wasm32-wasi/release/world_svc.wasm"
+allowed_http_hosts = []
+[component.trigger]
+route = "/..."
+[component.build]
+command = "npx nx build"
+watch = ["src/**/*.rs", "Cargo.toml"]
