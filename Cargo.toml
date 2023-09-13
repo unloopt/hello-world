@@ -1,2 +1,2 @@
 [workspace]
-members = ["apps/hello-svc", "apps/world-svc"]
+members = ["apps/hello-world-http/*"]

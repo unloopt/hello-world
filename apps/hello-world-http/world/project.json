@@ -1,14 +1,15 @@
 {
-    "name": "world-svc",
+    "name": "world",
     "$schema": "../../node_modules/nx/schemas/project-schema.json",
     "projectType": "library",
-    "sourceRoot": "apps/world-svc/src",
+    "sourceRoot": "{projectRoot}/src",
     "targets": {
         "build": {
             "executor": "@nxrs/cargo:build",
             "options": {
                 "release": false,
-                "target": "wasm32-wasi"
+                "target": "wasm32-wasi",
+                "targetDir": "{projectRoot}/target"
             },
             "configurations": {
                 "production": {
