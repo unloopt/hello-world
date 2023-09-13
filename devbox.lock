@@ -13,6 +13,7 @@
       "source": "devbox-search",
       "version": "20.5.1"
     },
+    "path:flakes/ory-cli": {},
     "redis@latest": {
       "last_modified": "2023-09-10T10:53:27Z",
       "plugin_version": "0.0.2",
