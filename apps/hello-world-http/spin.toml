@@ -1,0 +1,6 @@
+spin_manifest_version = "1"
+authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
+description = "Hello World http app"
+name = "hello-world-http"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"

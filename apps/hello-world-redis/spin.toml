@@ -1,0 +1,15 @@
+spin_manifest_version = "1"
+authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
+description = "Hello World redis app"
+name = "hello-world-redis"
+trigger = { type = "redis", address = "redis://localhost:6379" }
+version = "0.1.0"
+
+[[component]]
+id = "hello-world-redis"
+source = "target/wasm32-wasi/release/hello_world_redis.wasm"
+allowed_http_hosts = []
+[component.trigger]
+channel = "hello-world"
+[component.build]
+command = "cargo build --target wasm32-wasi --release"

@@ -7,29 +7,18 @@
       "source": "devbox-search",
       "version": "1.2.1"
     },
-    "nats-top@latest": {
-      "last_modified": "2023-07-03T17:00:56Z",
-      "resolved": "github:NixOS/nixpkgs/453da3c28f7a95374b73d1f3fd665dd40e6049e9#nats-top",
-      "source": "devbox-search",
-      "version": "0.6.1"
-    },
-    "natscli@latest": {
-      "last_modified": "2023-06-01T21:06:48Z",
-      "resolved": "github:NixOS/nixpkgs/e002d1926c23b29be7b59217e5f9740565b642ca#natscli",
-      "source": "devbox-search",
-      "version": "0.0.35"
-    },
     "nodejs@latest": {
       "last_modified": "2023-08-10T15:58:45Z",
       "resolved": "github:NixOS/nixpkgs/4d2389b927696ef8da4ef76b03f2d306faf87929#nodejs_20",
       "source": "devbox-search",
       "version": "20.5.1"
     },
-    "nsc@latest": {
-      "last_modified": "2023-06-01T21:06:48Z",
-      "resolved": "github:NixOS/nixpkgs/e002d1926c23b29be7b59217e5f9740565b642ca#nsc",
+    "redis@latest": {
+      "last_modified": "2023-09-10T10:53:27Z",
+      "plugin_version": "0.0.2",
+      "resolved": "github:NixOS/nixpkgs/78058d810644f5ed276804ce7ea9e82d92bee293#redis",
       "source": "devbox-search",
-      "version": "2.8.0"
+      "version": "7.2.1"
     },
     "rustup@latest": {
       "last_modified": "2023-06-26T15:25:16Z",

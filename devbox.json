@@ -2,10 +2,8 @@
   "packages": [
     "rustup@latest",
     "nodejs@latest",
+    "redis@latest",
     "fermyon-spin@latest",
-    "natscli@latest",
-    "nsc@latest",
-    "nats-top@latest",
     "path:flakes/ory-cli"
   ],
   "env": {
@@ -14,12 +12,10 @@
   "shell": {
     "init_hook": [
       "source config/set-env.sh",
-      "rustup default stable",
-      "rustup target add wasm32-wasi",
+      "source config/rustup.sh",
+      "source config/spin.sh",
       "cargo fetch",
-      "npm install",
-      "spin plugins update",
-      "spin templates install --git https://github.com/fermyon/spin --update"
+      "npm install"
     ],
     "scripts": {
       "build": "cargo build",
