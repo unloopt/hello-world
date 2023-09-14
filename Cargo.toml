@@ -1,2 +1,6 @@
 [workspace]
-members = ["apps/hello-world-http/hello", "apps/hello-world-http/world"]
+members = [
+    "apps/hello-world-services/hello",
+    "apps/hello-world-services/world",
+    "apps/hello-world-gateway/private",
+]

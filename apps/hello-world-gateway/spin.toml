@@ -1,0 +1,17 @@
+spin_manifest_version = "1"
+authors = ["Enej Simrajh <enej.simrajh@gmail.com>"]
+description = "Routes client requests to backend services"
+name = "hello-world-gateway"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "private"
+source = "private/target/wasm32-wasi/release/private.wasm"
+allowed_http_hosts = []
+[component.trigger]
+route = "/private"
+[component.build]
+command = "npx nx build"
+workdir = "private"
+watch = ["src/**/*.rs", "Cargo.toml"]

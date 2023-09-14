@@ -1,12 +1,12 @@
 [package]
-name = "gateway"
-authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
-description = "Gateway service"
+name = "private"
+authors = ["Enej Simrajh <enej.simrajh@gmail.com>"]
+description = "Private gateway"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
-crate-type = [ "cdylib" ]
+crate-type = ["cdylib"]
 
 [dependencies]
 # Useful crate to handle errors.
@@ -19,5 +19,3 @@ http = "0.2"
 spin-sdk = { git = "https://github.com/fermyon/spin", tag = "v1.2.1" }
 # Crate that generates Rust Wasm bindings from a WebAssembly interface.
 wit-bindgen-rust = { git = "https://github.com/bytecodealliance/wit-bindgen", rev = "cb871cfa1ee460b51eb1d144b175b9aab9c50aba" }
-
-[workspace]

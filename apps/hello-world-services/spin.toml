@@ -1,14 +1,14 @@
 spin_manifest_version = "1"
 authors = ["enejsimrajh <enej.simrajh@gmail.com>"]
-description = "Hello World http application"
-name = "hello-world-http"
+description = "Backend services"
+name = "hello-world-services"
 trigger = { type = "http", base = "/" }
 version = "0.1.0"
 
 [[component]]
 id = "hello"
 source = "hello/target/wasm32-wasi/debug/hello.wasm"
-allowed_http_hosts = ["localhost:8081"]
+allowed_http_hosts = []
 [component.trigger]
 route = "/hello"
 [component.build]
@@ -19,21 +19,10 @@ watch = ["src/**/*.rs", "Cargo.toml"]
 [[component]]
 id = "world"
 source = "world/target/wasm32-wasi/debug/world.wasm"
-allowed_http_hosts = ["localhost:8081"]
+allowed_http_hosts = []
 [component.trigger]
 route = "/world"
 [component.build]
 command = "npx nx build"
 workdir = "world"
-watch = ["src/**/*.rs", "Cargo.toml"]
-
-[[component]]
-id = "gateway"
-source = "gateway/target/wasm32-wasi/release/gateway.wasm"
-allowed_http_hosts = []
-[component.trigger]
-route = "/gateway"
-[component.build]
-command = "cargo build --target wasm32-wasi --release"
-workdir = "gateway"
 watch = ["src/**/*.rs", "Cargo.toml"]

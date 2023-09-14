@@ -6,11 +6,10 @@ use spin_sdk::{
 
 /// A simple Spin HTTP component.
 #[http_component]
-fn handle_hello(req: Request) -> Result<Response> {
+fn handle_private(req: Request) -> Result<Response> {
     println!("{:?}", req.headers());
     Ok(http::Response::builder()
         .status(200)
         .header("foo", "bar")
-        .header("Access-Control-Allow-Origin", "localhost:8081")
-        .body(Some("Hello".into()))?)
+        .body(Some("Hello, Fermyon".into()))?)
 }
