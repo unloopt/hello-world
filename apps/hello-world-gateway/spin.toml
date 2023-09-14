@@ -15,3 +15,5 @@ route = "/private"
 command = "npx nx build"
 workdir = "private"
 watch = ["src/**/*.rs", "Cargo.toml"]
+[component.config]
+cors_origin = "localhost:8081"
