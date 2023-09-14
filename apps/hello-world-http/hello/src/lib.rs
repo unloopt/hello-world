@@ -11,5 +11,6 @@ fn handle_hello(req: Request) -> Result<Response> {
     Ok(http::Response::builder()
         .status(200)
         .header("foo", "bar")
+        .header("Access-Control-Allow-Origin", "localhost:8081")
         .body(Some("Hello".into()))?)
 }

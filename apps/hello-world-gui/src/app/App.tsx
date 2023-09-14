@@ -21,7 +21,8 @@ export const App = () => {
 
   const getGreeting = async () => {
     try {
-      const response = await fetch('hello-world-svc-1vobegdh.fermyon.app');
+      console.log("getting greeting ...")
+      const response = await fetch('http://127.0.0.1:3000/hello');
       const text = await response.text();
       setGreeting(text);
     } catch (error) {
@@ -51,7 +52,7 @@ export const App = () => {
               <ActivityIndicator />
             ) : (
               <Text style={[styles.textXL, styles.appTitleText]} testID="heading">
-                greeting
+                {greeting}
               </Text>
             )}
           </View>

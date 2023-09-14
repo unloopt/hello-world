@@ -11,7 +11,8 @@
     "nrwl.angular-console",
     "github.vscode-github-actions",
     "esbenp.prettier-vscode",
-    "fermyon.spin-vscode"
+    "fermyon.spin-vscode",
+    "expo.vscode-expo-tools"
   ],
   "unwantedRecommendations": []
 }
